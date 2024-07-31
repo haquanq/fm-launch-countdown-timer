@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --clr-red-300: hsl(345, 95%, 68%);
+    --clr-red-500: hsl(341, 44%, 55%);
+
+    --clr-blue-100: hsl(237, 18%, 59%);
+    --clr-blue-500: hsl(236, 21%, 26%);
+    --clr-blue-800: hsl(235, 16%, 14%);
+    --clr-blue-900: hsl(234, 17%, 12%);
+    --clr-blue-900-hsl: 234, 17%, 12%;
+
+    --clr-white: hsl(0, 0%, 100%);
+
+    --font-sans: "Red Hat Text", sans-serif;
+    --font-bold: 700;
+  }
+
+  body {
+    line-height: 1;
+    font-family: var(--font-sans);
+    font-weight: var(--font-bold);
+  }
+
+  .flipper {
+    position: relative;
+    font-size: clamp(1rem, 6vw - 0.75rem, 4rem);
+    border-radius: calc(0.0625em + 0.25rem);
+  }
+  .flipper-content {
+    z-index: 999;
+    width: calc(1.625em + 2.75rem);
+    height: calc(1.5em + 2.75rem);
+    border-radius: inherit;
+  }
+  .flipper::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(calc(1.5em + 2.75rem) + calc(0.125em + 0.125rem));
+    background-color: hsla(var(--clr-blue-900-hsl), 0.5);
+    border-radius: inherit;
+  }
+  .flipper-top {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+  .flipper-bottom {
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }
+  .flipper-top,
+  .flipper-bottom {
+    font-size: calc(1em + 1rem);
+  }
+  .flipper-label {
+    font-size: calc(0.125em + 0.375rem);
+  }
+}
