@@ -21,7 +21,7 @@ On my road to complete all free challenges!
 
 ## What challenges did you encounter, and how did you overcome them?
 
-None 🐱
+To make the flipper component responsive (without many media queries), i have used `clamp(), calc()` to make the component responsive to parent element `font-size: clamp()` 🐱
 
 ## What specific areas of your project would you like help with?
 
