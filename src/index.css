@@ -47,6 +47,9 @@
     background-color: hsla(var(--clr-blue-900-hsl), 0.5);
     border-radius: inherit;
   }
+  .flipper-circle {
+    --circle-size: calc(0.125em + 0.25rem);
+  }
   .flipper-top {
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
