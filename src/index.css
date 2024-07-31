@@ -26,43 +26,15 @@
   }
 
   .flipper {
-    position: relative;
+    --flipper-circle-size: calc(0.125em + 0.25rem);
+    --flipper-width: calc(1.625em + 2.75rem);
+    --flipper-height: calc(1.5em + 2.75rem);
+    --flipper-number-size: calc(1em + 1rem);
+    --flipper-label-size: calc(0.125em + 0.375rem);
+    --flipper-shadow-offset-y: calc(0.125em + 0.125rem);
+
     font-size: clamp(1rem, 6vw - 0.75rem, 4rem);
     border-radius: calc(0.0625em + 0.25rem);
-  }
-  .flipper-content {
-    z-index: 999;
-    width: calc(1.625em + 2.75rem);
-    height: calc(1.5em + 2.75rem);
-    border-radius: inherit;
-  }
-  .flipper::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: calc(calc(1.5em + 2.75rem) + calc(0.125em + 0.125rem));
-    background-color: hsla(var(--clr-blue-900-hsl), 0.5);
-    border-radius: inherit;
-  }
-  .flipper-circle {
-    --circle-size: calc(0.125em + 0.25rem);
-  }
-  .flipper-top {
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-  }
-  .flipper-bottom {
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-  }
-  .flipper-top,
-  .flipper-bottom {
-    font-size: calc(1em + 1rem);
-  }
-  .flipper-label {
-    font-size: calc(0.125em + 0.375rem);
+    width: var(--flipper-width);
   }
 }

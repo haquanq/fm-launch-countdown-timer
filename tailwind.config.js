@@ -4,10 +4,6 @@ export default {
   theme: {
     fontFamily: {},
     fontWeight: {},
-    borderRadius: {
-      flipper: "var(--rounded-flipper)",
-      full: "9999px",
-    },
     colors: {
       red: {
         300: "var(--clr-red-300)",
@@ -28,6 +24,9 @@ export default {
     extend: {
       height: {
         "2/1": "200%",
+      },
+      borderRadius: {
+        inherit: "inherit",
       },
     },
   },

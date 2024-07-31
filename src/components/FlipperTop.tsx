@@ -11,13 +11,13 @@ export const FlipperTop = (props: FlipperTopProps) => {
     <div
       ref={props.ref}
       class={cn(
-        "flipper-top bg-[#2C2C44] flex justify-center text-red-500 w-full relative z-50 h-1/2 overflow-hidden",
+        "bg-[#2C2C44] flex justify-center text-[length:var(--flipper-number-size)] text-red-500 w-full relative z-50 h-1/2 overflow-hidden rounded-t-inherit",
         props.class
       )}
       {...otherProps}
     >
-      <FlipperCircle class="absolute -bottom-[calc(var(--circle-size)/2)] -left-[calc(var(--circle-size)/2)]" />
-      <FlipperCircle class="absolute -bottom-[calc(var(--circle-size)/2)] -right-[calc(var(--circle-size)/2)]" />
+      <FlipperCircle class="absolute -bottom-[calc(var(--flipper-circle-size)/2)] -left-[calc(var(--flipper-circle-size)/2)]" />
+      <FlipperCircle class="absolute -bottom-[calc(var(--flipper-circle-size)/2)] -right-[calc(var(--flipper-circle-size)/2)]" />
       <span class="w-full h-2/1 flex justify-center items-center">
         {props.value}
       </span>

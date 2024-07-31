@@ -59,8 +59,12 @@ export const Flipper = (props: FLipperProps) => {
     });
 
   return (
-    <div class="flipper">
-      <div class="flipper-content z-50 relative" ref={flipperRef}>
+    <div class="flipper relative">
+      <span class="absolute block left-0 right-0 top-0 h-[calc(var(--flipper-height)_+_var(--flipper-shadow-offset-y))] bg-blue-900 rounded-inherit"></span>
+      <div
+        class="z-[100] relative w-[var(--flipper-width)] h-[var(--flipper-height)] rounded-inherit"
+        ref={flipperRef}
+      >
         <FlipperTop
           class="absolute top-0 z-[999]"
           ref={oldFlipperTopRef}
@@ -75,7 +79,7 @@ export const Flipper = (props: FLipperProps) => {
         <FlipperTop ref={newFlipperTopRef} value={currentValue()} />
         <FlipperBottom ref={oldFlipperBottomRef} value={oldValue()} />
       </div>
-      <p class="flipper-label mt-[0.9375rem] md:mt-[1.75rem] text-blue-100 text-center uppercase tracking-[0.44em]">
+      <p class="mt-[0.9375rem] md:mt-[1.75rem] text-[length:var(--flipper-label-size)] text-blue-100 text-center uppercase tracking-[0.44em]">
         {props.label}
       </p>
     </div>

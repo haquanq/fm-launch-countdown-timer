@@ -7,7 +7,7 @@ export const FlipperCircle = (props: FlipperCircleProps) => {
   return (
     <span
       class={cn(
-        `flipper-circle absolute aspect-square w-[var(--circle-size)] rounded-full bg-blue-800`,
+        `absolute aspect-square w-[var(--flipper-circle-size)] rounded-full bg-blue-800`,
         props.class
       )}
       {...others}
