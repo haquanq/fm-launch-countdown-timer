@@ -28,7 +28,11 @@ function App() {
         </div>
         <ul class="flex gap-8 z-[999] justify-center relative">
           <li>
-            <a class="group w-6 h-6 flex justify-center items-center" href="">
+            <a
+              class="group w-6 h-6 flex justify-center items-center"
+              href=""
+              aria-label="Facebook"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
                   class="group-hover:fill-red-300 transition-colors"
@@ -39,7 +43,11 @@ function App() {
             </a>
           </li>
           <li>
-            <a class="group w-6 h-6 flex justify-center items-center" href="">
+            <a
+              class="group w-6 h-6 flex justify-center items-center"
+              href=""
+              aria-label="Pinterest"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
                   class="group-hover:fill-red-300 transition-colors"
@@ -50,7 +58,11 @@ function App() {
             </a>
           </li>
           <li>
-            <a class="group w-6 h-6 flex justify-center items-center" href="">
+            <a
+              class="group w-6 h-6 flex justify-center items-center"
+              href=""
+              aria-label="Instagram"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
                   class="group-hover:fill-red-300 transition-colors"
