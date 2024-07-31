@@ -7,12 +7,12 @@ function App() {
   return (
     <main class="bg-blue-800 pt-[8.875rem] pb-[3rem] lg:pt-[8.5rem] lg:pb-[4.5rem] min-h-screen relative">
       <img
-        class="absolute min-h-[10.5rem] max-h-[12.875rem] bottom-0 left-0 right-0 w-full pointer-events-none object-top object-cover"
+        class="absolute z-20 min-h-[10.5rem] max-h-[12.875rem] bottom-0 left-0 right-0 w-full pointer-events-none object-top object-cover"
         src="images/pattern-hills.svg"
         alt="Hills pattern"
       />
       <img
-        class="absolute  top-0 bottom-0 h-full z-0 object-cover objc pointer-events-none"
+        class="absolute z-10  top-0 bottom-0 h-full object-cover pointer-events-none"
         src="images/bg-stars.svg"
         alt="Background stars pattern"
       />
